@@ -23,7 +23,7 @@ function getCalibrationValueFromLine(line: string): number {
 	return calibrationValue;
 }
 
-function solve(document: string) {
+export function solve(document: string) {
 	let value = 0;
 	const lines = document.split("\n");
 	for (const line of lines) value += getCalibrationValueFromLine(line);

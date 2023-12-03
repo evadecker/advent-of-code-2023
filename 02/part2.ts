@@ -16,5 +16,3 @@ export function solve(input: string): number {
 	}
 	return value;
 }
-
-console.log(solve(input));
