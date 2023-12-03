@@ -1,6 +1,3 @@
-// import * as fs from "fs";
-// const input = fs.readFileSync("./input.txt", "utf-8");
-
 import { input } from "./input";
 
 const MAX_RED = 12;
@@ -92,9 +89,9 @@ export function isGamePossible(line: string): boolean {
 	return true;
 }
 
-export function solve(document: string) {
+export function solve(input: string) {
 	let value = 0;
-	const lines = document.split("\n");
+	const lines = input.split("\n");
 	for (const line of lines) {
 		const gameNumber = getGameNumberFromString(line);
 		const isPossible = isGamePossible(line);
