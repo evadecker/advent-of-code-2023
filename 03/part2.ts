@@ -4,15 +4,13 @@ export function solve(input: string) {
 	// Create a 2D array from input
 	const lines = input.split("\n").map((line) => line.split(""));
 
-	// An array of all numbers with adjacent symbols
+	// An array of all numbers adjacent to an asterisk
 	let validNumbers: {
 		number: number;
 		asteriskPosition: [number, number];
 	}[] = [];
 
-	// Iterate over each line
 	for (let i = 0; i < lines.length; i++) {
-		// Iterate over each character
 		for (let j = 0; j < lines[i].length; j++) {
 			// If a character is an integer, run some tests
 			if (lines[i][j].match(/\d/)) {
@@ -22,7 +20,7 @@ export function solve(input: string) {
 				while (j < lines[i].length && lines[i][j].match(/\d/)) {
 					currentNumberAsString += lines[i][j];
 
-					// Compile an array of adjacent symbols
+					// Check for asterisks
 					if (i > 0) {
 						if (lines[i - 1][j]?.match(/\*/)) adjacentAsteriskPos = [i - 1, j]; // N
 						if (j > 0 && lines[i - 1][j - 1]?.match(/\*/))
@@ -73,10 +71,9 @@ export function solve(input: string) {
 			sum += gearRatio;
 		}
 
+		// Push the used asterisk to prevent re-running the same calculation for the matched valid number
 		usedAsterisks.push(validNumber.asteriskPosition);
 	}
 
 	return sum;
 }
-
-console.log(solve(input));
