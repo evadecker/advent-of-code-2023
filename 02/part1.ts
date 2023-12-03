@@ -99,5 +99,3 @@ export function solve(input: string) {
 	}
 	return value;
 }
-
-console.log(solve(input));

@@ -29,5 +29,3 @@ export function solve(document: string) {
 	for (const line of lines) value += getCalibrationValueFromLine(line);
 	return value;
 }
-
-console.log(solve(input));
