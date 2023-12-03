@@ -1,5 +1,4 @@
-import * as fs from "fs";
-const input = fs.readFileSync("./input.txt", "utf-8");
+import { input } from "./input";
 
 function getCalibrationValueFromLine(line: string): number {
 	function getFirstDigit(line: string): number {

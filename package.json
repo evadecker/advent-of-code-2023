@@ -1,6 +1,10 @@
 {
-  "devDependencies": {
-    "@biomejs/biome": "1.4.1",
-    "@types/node": "^20.10.1"
-  }
+	"scripts": {
+		"test": "vitest"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.4.1",
+		"@types/node": "^20.10.1",
+		"vitest": "^0.34.6"
+	}
 }

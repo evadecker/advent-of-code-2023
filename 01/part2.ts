@@ -1,5 +1,4 @@
-import * as fs from "fs";
-const input = fs.readFileSync("./input.txt", "utf-8");
+import { input } from "./input";
 
 function textToNumber(text: string): number {
 	switch (text) {

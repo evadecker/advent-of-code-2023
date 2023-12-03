@@ -1,4 +1,4 @@
-jjfvnnlfivejj1
+export const input = `jjfvnnlfivejj1
 6fourfour
 ninevbmltwo69
 pcg91vqrfpxxzzzoneightzt
@@ -997,4 +997,4 @@ lpncsfkn7fsgvkl
 81s
 2four3threesxxvlfqfive4
 nine6eightsevenzx9twoxc
-hmbfjdfnp989mfivefiverpzrjs
+hmbfjdfnp989mfivefiverpzrjs`;
