@@ -1,5 +1,3 @@
-import { input } from "./input";
-
 export function solve(input: string) {
 	// Create a 2D array from input
 	const lines = input.split("\n").map((line) => line.split(""));
